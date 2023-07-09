@@ -48,7 +48,7 @@ Lets see how we can call the same above **Employee-Service API** Via **Service-G
 
 
 
-_http://localhost:8765/employee-service/employee/emp/getEmployee/1 _  ::  direct call to eployee-service  cia service-gateway
+_http://localhost:8765/employee-service/employee/emp/getEmployee/1_  ::  direct call to eployee-service  cia service-gateway
 
 _http://localhost:8765/employee-feign-service/employeeRm/remote/getFeignEmployee/1_   ::call to employee-service via service-gateway through FEIGN CLIENT
 
