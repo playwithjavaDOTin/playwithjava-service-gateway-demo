@@ -27,10 +27,6 @@ Call to api through feign client remotely from employee-feign-service ,since eur
 
 **http://localhost:9005/employeeRm/remote/getFeignEmployee/1**
 
-http://localhost:8765/employee-service/employee/emp/getEmployee/1  ::  eployee-service
-
-http://localhost:8765/employee-feign-service/employeeRm/remote/getFeignEmployee/1   ::feign
-
 
 
 **Service-Gateway**
@@ -45,9 +41,13 @@ Lets see how we can call the same above **Employee-Service API** Via **Service-G
 
 **employee-service** :: service name of employee-service
 
+**employee-feign-service**   ::  service name of employee-feign-service application [check in application.properties file]
+
 **employee/emp/getEmployee/1**  :: endpoint you wanted to call from employee-service [http://localhost:9003/employee/emp/getEmployee/1  , just removehost and port]
 
-http://localhost:8765/employee/emp/getEmployee/1 
 
-http://localhost:8765/employeeRm/remote/getFeignEmployee/1
+
+_http://localhost:8765/employee-service/employee/emp/getEmployee/1 _  ::  direct call to eployee-service  cia service-gateway
+
+_http://localhost:8765/employee-feign-service/employeeRm/remote/getFeignEmployee/1_   ::call to employee-service via service-gateway through FEIGN CLIENT
 
