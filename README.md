@@ -8,7 +8,7 @@ clone all the services and make sure that all service are up and running in your
 
 **Lets consider you want to call below API from Epployee-Service**
 
-http://localhost:9003/employee/emp/getEmployee/1
+_http://localhost:9003/employee/emp/getEmployee/1_
 
 
 As we have 2 running istances of **Epployee-Service** , when you are making call directly you need to mention PORT of service everytime while calling and you will be able to call API on given instance only as PORT no is given.
@@ -25,7 +25,7 @@ Here we will call **Employee-service API** via Feign client to enable load balan
 
 Call to api through feign client remotely from employee-feign-service ,since eureka is enable so we can even call using service name
 
-**http://localhost:9005/employeeRm/remote/getFeignEmployee/1**
+_http://localhost:9005/employeeRm/remote/getFeignEmployee/1_
 
 
 
